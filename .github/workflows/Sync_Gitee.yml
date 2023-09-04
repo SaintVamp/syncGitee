@@ -20,14 +20,9 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          docker rmi $(docker images -q)
           sudo -E apt-get update -y
           sudo -E apt-get full-upgrade -y
           sudo -E apt-get install -y git 
-
-      - name: Server Benchmark
-        run: |
-          wget -qO- --no-check-certificate https://raw.githubusercontent.com/Kurokosama/serverbench/main/bench.sh | bash
 
 
       - name: Clone Source
