@@ -28,7 +28,7 @@ jobs:
       - name: Clone Source
         run: |
           cd "/home/runner"
-          git clone git@gitee.com:saintvamp/SVTOOL.git "SVTOOL"
+          git clone http://saintvamp:${{ secrets.GITHUB_TOKEN }}@gitee.com:saintvamp/SVTOOL.git "SVTOOL"
           sudo chown -R runner:runner "SVTOOL"
           cd "/home/runner/SVTOOL"
           git remote add github git@github.com:SaintVamp/SVTOOL.git
