@@ -23,6 +23,7 @@ jobs:
           mkdir temp_d
           cd temp_d
           pwd
+          git init
           git clone https://gitee.com/saintvamp/test_sync.git
           git remote -v
           ls -al
