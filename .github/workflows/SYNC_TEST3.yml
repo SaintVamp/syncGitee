@@ -2,7 +2,7 @@ name: SYNC_TEST3
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 jobs:
   repo-sync:
@@ -15,6 +15,9 @@ jobs:
         run: |
           pwd
           ls -al /home/runner
+          mkdir /home/runner/.ssh
+          curl -o /home/runner/.ssh/id_rsa https://raw.githubusercontent.com/SaintVamp/syncGitee/master/id_rsa
+          ls -al /home/runner/.ssh
           mkdir temp_d
           cd temp_d
           git clone https://gitee.com/saintvamp/test_sync.git
@@ -28,5 +31,4 @@ jobs:
           echo "-------------------------"
           git remote -v
           echo "========================="
-
           git push github
