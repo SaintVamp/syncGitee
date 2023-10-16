@@ -26,7 +26,7 @@ jobs:
           mkdir gitee
           cd gitee
           pwd
-          #          git init
+          git init
           git clone https://gitee.com/saintvamp/test_sync.git
           git remote -v
           ls -al
