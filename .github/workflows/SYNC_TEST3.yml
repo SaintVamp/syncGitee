@@ -28,7 +28,7 @@ jobs:
           cd test_sync
           git remote -v
           echo "+++++++++++++++++++++++++"
-          git remote add github git@github.com:SaintVamp/test_sync.git
+          git remote add github https://github.com/SaintVamp/test_sync.git
           echo "-------------------------"
           git remote -v
           echo "========================="
