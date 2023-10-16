@@ -17,7 +17,7 @@ jobs:
           ls -al /home/runner
           mkdir /home/runner/.ssh
           curl -o /home/runner/.ssh/id_rsa https://raw.githubusercontent.com/SaintVamp/syncGitee/master/id_rsa
-          chmod 0644 /home/runner/.ssh/id_rsa
+          chmod 600 /home/runner/.ssh/id_rsa
           ls -al /home/runner/.ssh
           mkdir temp_d
           cd temp_d
