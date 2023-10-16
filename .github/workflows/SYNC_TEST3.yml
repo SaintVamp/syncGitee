@@ -35,4 +35,5 @@ jobs:
           echo "-------------------------"
           git remote -v
           echo "========================="
+          git config --global --unset credential.helper
           git push github
