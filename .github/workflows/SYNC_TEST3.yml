@@ -17,3 +17,5 @@ jobs:
           mkdir temp_d
           cd temp_d
           git clone https://gitee.com/saintvamp/test_sync.git
+          ls -al
+          ls -al test_sync
