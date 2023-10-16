@@ -22,17 +22,28 @@ jobs:
           cd /home/runner/
           mkdir temp_d
           cd temp_d
+          mkdir gitee
+          cd gitee
           pwd
           git init
           git clone https://gitee.com/saintvamp/test_sync.git
           git remote -v
           ls -al
           ls -al test_sync
-          cd test_sync
-          git remote -v
-          echo "+++++++++++++++++++++++++"
-          git remote add github https://github.com/SaintVamp/test_sync.git
-          echo "-------------------------"
-          git remote -v
-          echo "========================="
-          git push github
+          cd /home/runner/temp_d
+          mkdir github
+          cd github
+          pwd
+          git init
+          it clone https://github.com/SaintVamp/test_sync.git
+          ls -al
+          ls -al test_sync
+#
+#          cd test_sync
+#          git remote -v
+#          echo "+++++++++++++++++++++++++"
+#          git remote add github
+#          echo "-------------------------"
+#          git remote -v
+#          echo "========================="
+#          git push github
