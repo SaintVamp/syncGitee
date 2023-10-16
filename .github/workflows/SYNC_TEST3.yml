@@ -20,6 +20,16 @@ jobs:
           chmod 600 /home/runner/.ssh/id_rsa
           ls -al /home/runner/.ssh
           echo "===========1==========="
+          
+          cd /home/runner/temp_d
+          mkdir github
+          cd github
+          pwd
+          #          git init
+          it clone https://github.com/SaintVamp/test_sync.git
+          ls -al
+          ls -al test_sync
+
           cd /home/runner/
           mkdir temp_d
           cd temp_d
@@ -31,14 +41,7 @@ jobs:
           git remote -v
           ls -al
           ls -al test_sync
-          cd /home/runner/temp_d
-          mkdir github
-          cd github
-          pwd
-          #          git init
-          it clone https://github.com/SaintVamp/test_sync.git
-          ls -al
-          ls -al test_sync
+          
           #          cd test_sync
           #          git remote -v
           #          echo "+++++++++++++++++++++++++"
