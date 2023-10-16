@@ -13,6 +13,7 @@ jobs:
       - name: Mirror the Github organization repos to Gitee.
         id: sync
         run: |
+          pwd
           ls -al
           mkdir temp_d
           cd temp_d
@@ -25,4 +26,7 @@ jobs:
           echo "+++++++++++++++++++++++++"
           git remote add github git@github.com:SaintVamp/test_sync.git
           echo "-------------------------"
+          git remote -v
+          echo "========================="
+
           git push github
