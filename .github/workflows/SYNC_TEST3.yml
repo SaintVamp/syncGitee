@@ -1,0 +1,19 @@
+name: SYNC_TEST3
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source codes
+        uses: actions/checkout@v3
+      - name: Mirror the Github organization repos to Gitee.
+        id: sync
+        run: |
+          ls -al
+          mkdir temp_d
+          cd temp_d
+          git clone https://gitee.com/saintvamp/test_sync.git
