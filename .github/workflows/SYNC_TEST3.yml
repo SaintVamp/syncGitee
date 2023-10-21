@@ -29,7 +29,8 @@ jobs:
           #          git init
           git clone https://github.com/SaintVamp/test_sync.git
           ls
-          ls test_sync
+          ls -al test_sync
+          ls -al test_sync/.git
           echo "===========2==========="
           cd /home/runner/temp_d
           mkdir gitee
@@ -39,15 +40,18 @@ jobs:
           git clone https://gitee.com/saintvamp/test_sync.git
           git remote -v
           ls
-          ls test_sync
+          ls -al test_sync
+          ls -al test_sync/.git
           echo "===========3==========="
           ls /home/runner/temp_d/gitee/|xargs -i cp -r -u /home/runner/temp_d/gitee//{} /home/runner/temp_d/github/
           ls /home/runner/temp_d/github/
           ls -al /home/runner/temp_d/github/test_sync
           cd /home/runner/temp_d/github/test_sync
+          ls -al .git
+          echo "===========4==========="
           cat README.md
           git status
-          echo "===========4==========="
+          echo "===========5==========="
           git commit
           git pull
           #          cd test_sync
