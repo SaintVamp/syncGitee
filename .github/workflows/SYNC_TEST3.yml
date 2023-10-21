@@ -45,6 +45,7 @@ jobs:
           ls /home/runner/temp_d/github/
           ls -al /home/runner/temp_d/github/test_sync
           cd /home/runner/temp_d/github/test_sync
+          cat README.md
           git status
           echo "===========4==========="
           git commit
