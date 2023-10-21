@@ -47,7 +47,7 @@ jobs:
           echo "=----------1---------="
           ls -a /home/runner/temp_d/gitee/ | grep -v .git
           echo "=----------2---------="
-          ls -a /home/runner/temp_d/gitee/ | grep -v .git |xargs -i cp -r -u /home/runner/temp_d/gitee/{} /home/runner/temp_d/github/
+          ls -a /home/runner/temp_d/gitee/test_sync | grep -v .git |xargs -i cp -r -u /home/runner/temp_d/gitee/test_sync/{} /home/runner/temp_d/github/test_sync/
           ls -al /home/runner/temp_d/github/
           ls -al /home/runner/temp_d/github/test_sync
           cd /home/runner/temp_d/github/test_sync
