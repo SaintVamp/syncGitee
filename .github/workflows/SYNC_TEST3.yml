@@ -47,7 +47,7 @@ jobs:
           cp -r /home/runner/temp_d/gitee/test_sync/ /home/runner/temp_d/github/test_sync/
           cd /home/runner/temp_d/github/test_sync
           ls -al .git
-          rm -rf .git
+          git remote -v
           echo "===========4==========="
           git add .
           git status
