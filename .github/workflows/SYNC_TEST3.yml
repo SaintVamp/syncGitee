@@ -53,7 +53,6 @@ jobs:
           cd /home/runner/temp_d/github/test_sync
           ls -al .git
           echo "===========4==========="
-          cat README.md
           git status
           echo "===========5==========="
           git commit
