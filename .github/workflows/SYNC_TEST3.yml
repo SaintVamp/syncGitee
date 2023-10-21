@@ -42,8 +42,9 @@ jobs:
           # ls
           # ls -al test_sync
           ls -al test_sync/.git
+          rm -rf .git
           echo "===========3==========="
-          ls -a /home/runner/temp_d/gitee/test_sync/ | grep -v .git |xargs -i cp -r /home/runner/temp_d/gitee/test_sync/{} /home/runner/temp_d/github/test_sync/
+          cp -r /home/runner/temp_d/gitee/test_sync/ /home/runner/temp_d/github/test_sync/
           cd /home/runner/temp_d/github/test_sync
           ls -al .git
           echo "===========4==========="
