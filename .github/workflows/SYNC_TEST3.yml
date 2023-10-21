@@ -48,8 +48,9 @@ jobs:
           cd /home/runner/temp_d/github/test_sync
           ls -al .git
           git remote -v
+          pwd
           echo "===========4==========="
-          git add .
+          git add -v .
           git status
           echo "===========5==========="
           git commit
