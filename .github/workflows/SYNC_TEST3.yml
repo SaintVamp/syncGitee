@@ -28,28 +28,22 @@ jobs:
           pwd
           #          git init
           git clone https://github.com/SaintVamp/test_sync.git
-          ls
-          ls -al test_sync
+          # ls
+          # ls -al test_sync
           ls -al test_sync/.git
           echo "===========2==========="
           cd /home/runner/temp_d
           mkdir gitee
           cd gitee
           pwd
-          git init
+          # git init
           git clone https://gitee.com/saintvamp/test_sync.git
-          git remote -v
-          ls
-          ls -al test_sync
+          # git remote -v
+          # ls
+          # ls -al test_sync
           ls -al test_sync/.git
           echo "===========3==========="
-          ls -a /home/runner/temp_d/gitee/test_sync 
-          echo "=----------1---------="
-          ls -a /home/runner/temp_d/gitee/test_sync/ | grep -v .git
-          echo "=----------2---------="
-          ls -a /home/runner/temp_d/gitee/test_sync/ | grep -v .git |xargs -i cp -r -u /home/runner/temp_d/gitee/test_sync/{} /home/runner/temp_d/github/test_sync/
-          ls -al /home/runner/temp_d/github/
-          ls -al /home/runner/temp_d/github/test_sync
+          ls -a /home/runner/temp_d/gitee/test_sync/ | grep -v .git |xargs -i cp -r /home/runner/temp_d/gitee/test_sync/{} /home/runner/temp_d/github/test_sync/
           cd /home/runner/temp_d/github/test_sync
           ls -al .git
           echo "===========4==========="
