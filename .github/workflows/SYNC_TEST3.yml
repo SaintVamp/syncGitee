@@ -51,8 +51,9 @@ jobs:
           pwd
           echo "===========4==========="
           git add -v .
-          git status
           echo "===========5==========="
+          git status
+          echo "===========6==========="
           git commit
           git pull
           #          cd test_sync
