@@ -32,8 +32,6 @@ jobs:
           ls -al test_sync
 
           cd /home/runner/
-          mkdir temp_d
-          cd temp_d
           mkdir gitee
           cd gitee
           pwd
