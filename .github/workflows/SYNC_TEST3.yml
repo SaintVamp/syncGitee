@@ -27,7 +27,7 @@ jobs:
           cd github
           pwd
           #          git init
-          it clone https://github.com/SaintVamp/test_sync.git
+          git clone https://github.com/SaintVamp/test_sync.git
           ls -al
           ls -al test_sync
 
