@@ -13,4 +13,4 @@ jobs:
       - name: Mirror the Github organization repos to Gitee.
         id: sync
         run: |
-          ls -al /home/runner/work/syncGitee/syncGitee
+          sh /home/runner/work/syncGitee/syncGitee/sync.sh
