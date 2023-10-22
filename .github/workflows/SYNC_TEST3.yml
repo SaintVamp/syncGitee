@@ -58,6 +58,8 @@ jobs:
           echo "===========5==========="
           git status
           echo "===========6==========="
+          git config --global user.email "saint-wp@163.com"
+          git config --global user.name "sv-action"
           git commit
           git pull
           #          cd test_sync
