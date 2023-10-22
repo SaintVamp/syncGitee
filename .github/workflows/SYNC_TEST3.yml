@@ -14,45 +14,32 @@ jobs:
         id: sync
         run: |
           pwd
-          ls /home/sv
-          mkdir /home/sv/.ssh
+          ls /home/runner
+          mkdir /home/runner/.ssh
           curl -o /home/sv/.ssh/id_rsa https://gitee.com/saintvamp/publick_rsa/raw/master/npw
-          chmod 600 /home/sv/.ssh/id_rsa
-          ls /home/sv/.ssh
+          chmod 600 /home/runner/.ssh/id_rsa
+          ls /home/runner/.ssh
           echo "===========1==========="
-          cd /home/sv/
+          cd /home/runner/
           mkdir temp_d
-          cd /home/sv/temp_d
+          cd /home/runner/temp_d
           mkdir github
           cd github
           pwd
-          #git init
           git clone https://github.com/SaintVamp/test_sync.git
-          # ls
-          # ls -al test_sync
           ls -al test_sync/.git
           echo "===========2==========="
-          cd /home/sv/temp_d
+          cd /home/runner/temp_d
           mkdir gitee
           cd gitee
           pwd
-          # git init
           git clone https://gitee.com/saintvamp/test_sync.git
-          # git remote -v
-          # ls
-          # ls -al test_sync
-          ls -al test_sync/.git
           rm -rf test_sync/.git
           echo "===========3==========="
-          cp -r /home/sv/temp_d/gitee/test_sync/ /home/sv/temp_d/github/
-          cd /home/sv/temp_d/github/test_sync
-          ls -al .git
-          git remote -v
+          cp -r /home/runner/temp_d/gitee/test_sync/ /home/runner/temp_d/github/
+          cd /home/runner/temp_d/github/test_sync
           pwd
           echo "===========4==========="
-          # git rm --cached SaintVamp/test_sync
-          # git submodule add https://github.com/SaintVamp/test_sync.git test_sync
-          pwd
           ls
           ls |xargs -i git add -v {}
           echo "===========5==========="
