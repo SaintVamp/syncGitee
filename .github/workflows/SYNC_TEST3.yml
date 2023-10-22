@@ -50,8 +50,8 @@ jobs:
           git remote -v
           pwd
           echo "===========4==========="
-          git rm --cached SaintVamp/test_sync
-          git submodule add https://github.com/SaintVamp/test_sync.git test_sync
+          # git rm --cached SaintVamp/test_sync
+          # git submodule add https://github.com/SaintVamp/test_sync.git test_sync
           ls |xargs -i git add -v {}
           echo "===========5==========="
           git status
