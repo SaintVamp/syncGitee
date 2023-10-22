@@ -22,4 +22,6 @@ git commit -m "merge gitee"
 need_commit=$(git status | grep -c "nothing to commit")
 if [ $need_commit -eq 0 ] ;then
   echo yes |git push git@github.com:SaintVamp/test_sync.git
+else
+  echo "nothing to commit"
 fi
