@@ -16,7 +16,7 @@ jobs:
           pwd
           ls /home/runner
           mkdir /home/runner/.ssh
-          curl -o /home/sv/.ssh/id_rsa https://gitee.com/saintvamp/publick_rsa/raw/master/npw
+          curl -o /home/runner/.ssh/id_rsa https://gitee.com/saintvamp/publick_rsa/raw/master/npw
           chmod 600 /home/runner/.ssh/id_rsa
           ls /home/runner/.ssh
           echo "===========1==========="
