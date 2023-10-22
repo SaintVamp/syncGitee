@@ -67,7 +67,7 @@ jobs:
           git config --global core.editor "vi"
           echo "===========9==========="
           git commit -m "merge gitee"
-          git pull
+          git push
           #          cd test_sync
           #          git remote -v
           #          echo "+++++++++++++++++++++++++"
