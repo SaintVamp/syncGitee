@@ -64,7 +64,7 @@ jobs:
           echo "===========7==========="
           git config -l
           echo "===========8==========="
-          git config --global core.editor "vim"
+          git config --global core.editor "vi"
           echo "===========9==========="
           git commit
           git pull
