@@ -27,7 +27,8 @@ cp -r /home/runner/temp_d/gitee/$project_name/ /home/runner/temp_d/github/
 echo "cp gitee to github down"
 cd /home/runner/temp_d/github/$project_name
 echo "git add"
-ls |xargs -i git add -v {}
+ls
+ls | xargs -i git add -v {}
 echo "git add down"
 git config --global user.email "saint-wp@163.com"
 git config --global user.name "sv-action"
