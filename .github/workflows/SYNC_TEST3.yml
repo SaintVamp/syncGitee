@@ -52,6 +52,8 @@ jobs:
           echo "===========4==========="
           # git rm --cached SaintVamp/test_sync
           # git submodule add https://github.com/SaintVamp/test_sync.git test_sync
+          pwd
+          ls
           ls |xargs -i git add -v {}
           echo "===========5==========="
           git status
