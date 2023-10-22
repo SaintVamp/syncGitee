@@ -1,4 +1,4 @@
-name: SYNC_TEST3
+name: sync_every_hour
 on:
   schedule:
     - cron: "0 */1 * * *"
