@@ -42,9 +42,9 @@ jobs:
           # ls
           # ls -al test_sync
           ls -al test_sync/.git
-          rm -rf .git
+          rm -rf test_sync/.git
           echo "===========3==========="
-          cp -r /home/runner/temp_d/gitee/test_sync/ /home/runner/temp_d/github/test_sync/
+          cp -r /home/runner/temp_d/gitee/test_sync/ /home/runner/temp_d/github/
           cd /home/runner/temp_d/github/test_sync
           ls -al .git
           git remote -v
