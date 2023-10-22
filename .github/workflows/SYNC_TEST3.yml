@@ -14,25 +14,25 @@ jobs:
         id: sync
         run: |
           pwd
-          ls /home/runner
-          mkdir /home/runner/.ssh
-          curl -o /home/runner/.ssh/id_rsa https://raw.githubusercontent.com/SaintVamp/syncGitee/master/id_rsa
-          chmod 600 /home/runner/.ssh/id_rsa
-          ls /home/runner/.ssh
+          ls /home/sv
+          mkdir /home/sv/.ssh
+          curl -o /home/sv/.ssh/id_rsa https://gitee.com/saintvamp/publick_rsa/raw/master/npw
+          chmod 600 /home/sv/.ssh/id_rsa
+          ls /home/sv/.ssh
           echo "===========1==========="
-          cd /home/runner/
+          cd /home/sv/
           mkdir temp_d
-          cd /home/runner/temp_d
+          cd /home/sv/temp_d
           mkdir github
           cd github
           pwd
-          #          git init
+          #git init
           git clone https://github.com/SaintVamp/test_sync.git
           # ls
           # ls -al test_sync
           ls -al test_sync/.git
           echo "===========2==========="
-          cd /home/runner/temp_d
+          cd /home/sv/temp_d
           mkdir gitee
           cd gitee
           pwd
@@ -44,8 +44,8 @@ jobs:
           ls -al test_sync/.git
           rm -rf test_sync/.git
           echo "===========3==========="
-          cp -r /home/runner/temp_d/gitee/test_sync/ /home/runner/temp_d/github/
-          cd /home/runner/temp_d/github/test_sync
+          cp -r /home/sv/temp_d/gitee/test_sync/ /home/sv/temp_d/github/
+          cd /home/sv/temp_d/github/test_sync
           ls -al .git
           git remote -v
           pwd
@@ -67,12 +67,4 @@ jobs:
           git config --global core.editor "vi"
           echo "===========9==========="
           git commit -m "merge gitee"
-          git push
-          #          cd test_sync
-          #          git remote -v
-          #          echo "+++++++++++++++++++++++++"
-          #          git remote add github
-          #          echo "-------------------------"
-          #          git remote -v
-          #          echo "========================="
-          #          git push github
+          echo yes |git push git@github.com:SaintVamp/test_sync.git
