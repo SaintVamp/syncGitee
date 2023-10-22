@@ -10,7 +10,7 @@ mkdir temp_d
 cd /home/runner/temp_d
 mkdir github
 cd github
-git clone https://github.com/SaintVamp/$project_name.git
+git clone git@github.com:SaintVamp/$project_name.git
 ls -al $project_name
 echo "clone github down"
 echo "clone gitee"
