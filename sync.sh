@@ -1,3 +1,4 @@
+echo "============start============"
 project_name=$1
 echo "update ssh"
 mkdir /home/runner/.ssh
@@ -43,3 +44,4 @@ else
 fi
 cd /home/runner/
 rm -rf temp_d
+echo "============finish============"
