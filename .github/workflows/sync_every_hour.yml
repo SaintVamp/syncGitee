@@ -1,0 +1,20 @@
+name: SYNC_TEST3
+on:
+  schedule:
+    - cron: "0 */1 * * *"
+  workflow_dispatch:
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source codes
+        uses: actions/checkout@v3
+      - name: Mirror the Github organization repos to Gitee.
+        id: sync
+        run: |
+          sh /home/runner/work/syncGitee/syncGitee/sync.sh py_qbRssDown
+          sh /home/runner/work/syncGitee/syncGitee/sync.sh py_book
+          sh /home/runner/work/syncGitee/syncGitee/sync.sh nginx_conf
+          sh /home/runner/work/syncGitee/syncGitee/sync.sh nassyncswitch
+
+          
