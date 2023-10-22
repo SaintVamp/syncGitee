@@ -3,9 +3,9 @@ on:
 #  schedule:
 #    - cron: "0 17 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - master
+  # push:
+  #   branches:
+  #     - master
 env:
   BRANCH_NAME: openwrt-22.03
 

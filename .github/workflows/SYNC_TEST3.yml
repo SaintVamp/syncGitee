@@ -13,37 +13,4 @@ jobs:
       - name: Mirror the Github organization repos to Gitee.
         id: sync
         run: |
-          pwd
-          ls -al /home/runner
-          mkdir /home/runner/.ssh
-          curl -o /home/runner/.ssh/id_rsa https://raw.githubusercontent.com/SaintVamp/syncGitee/master/id_rsa
-          chmod 600 /home/runner/.ssh/id_rsa
-          ls -al /home/runner/.ssh
-          cd /home/runner/
-          mkdir temp_d
-          cd temp_d
-          mkdir gitee
-          cd gitee
-          pwd
-          git init
-          git clone https://gitee.com/saintvamp/test_sync.git
-          git remote -v
-          ls -al
-          ls -al test_sync
-          cd /home/runner/temp_d
-          mkdir github
-          cd github
-          pwd
-          git init
-          it clone https://github.com/SaintVamp/test_sync.git
-          ls -al
-          ls -al test_sync
-#
-#          cd test_sync
-#          git remote -v
-#          echo "+++++++++++++++++++++++++"
-#          git remote add github
-#          echo "-------------------------"
-#          git remote -v
-#          echo "========================="
-#          git push github
+          sh /home/runner/work/syncGitee/syncGitee/sync.sh py_qbRssDown
