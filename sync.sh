@@ -19,7 +19,7 @@ git config --global user.email "saint-wp@163.com"
 git config --global user.name "sv-action"
 git config --global core.editor "vi"
 git commit -m "merge gitee"
-need_commit=git status | grep -c "nothing to commit"
-if [ $need_commit -lt 1 ] ;then
+need_commit=$(git status | grep -c "nothing to commit")
+if [ $need_commit -eq 0 ] ;then
   echo yes |git push git@github.com:SaintVamp/test_sync.git
-fi 
+fi
