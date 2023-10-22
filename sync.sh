@@ -41,3 +41,5 @@ if [ $need_commit -eq 0 ] ;then
 else
   echo "nothing to commit"
 fi
+cd /home/runner/
+rm -rf temp_d
