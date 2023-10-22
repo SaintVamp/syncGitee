@@ -61,6 +61,8 @@ jobs:
           git config --global user.email "saint-wp@163.com"
           git config --global user.name "sv-action"
           git status
+          git config --get core.editor
+          echo "===========7==========="
           git commit
           git pull
           #          cd test_sync
