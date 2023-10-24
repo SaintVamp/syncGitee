@@ -12,6 +12,7 @@ jobs:
       - name: Mirror the Github organization repos to Gitee.
         id: sync
         run: |
+          sh /home/runner/work/syncGitee/syncGitee/init-rss.sh
           sh /home/runner/work/syncGitee/syncGitee/sync.sh py_qbRssDown
           sh /home/runner/work/syncGitee/syncGitee/sync.sh py_book
           sh /home/runner/work/syncGitee/syncGitee/sync.sh nginx_conf
